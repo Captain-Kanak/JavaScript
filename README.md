@@ -1,6 +1,5 @@
 # JavaScript Interview Question
 Author - Captain Kanak
-<br>
 1. What is equality in JavaScript?
 <br>
 2. What is typeof operator?
