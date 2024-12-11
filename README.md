@@ -1,7 +1,6 @@
 # JavaScript Interview Question
 Author - Captain Kanak
 1. What is equality in JavaScript?
-<br>
 2. What is typeof operator?
 <br>
 3. Explain is Scope in JavaScript?
