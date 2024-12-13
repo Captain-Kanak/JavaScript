@@ -8,7 +8,7 @@
 // console.log(a === b); // Strict Comparison - false
 
 // let PI = 3.14;
-// if (PI != "3.14") {
+// if (PI !== "3.14") {
 //   console.log("That is PI");
 // } else {
 //   console.log("That is not PI");
@@ -21,7 +21,7 @@
 // (!=) - Inequality Operator
 // (!==) - Strict Inequality Operator
 
-// 2. What is typeof Operator?
+// 2. What is typeof Operator in JavaScript?
 
 // let a; // typeof a - undefined
 // a = undefined; // typeof a - undefined
@@ -34,13 +34,13 @@
 // a = NaN; // typeof a - number (NaN - Not a Number)
 // a = function abc() {}; // typeof a - function
 
-// *** Date(year, month, day, hour, minute, second, ms) ***
+// *** let d = new Date(year, month, day, hour, minute, second, ms) - we can pass arguments like this***
 // let d = new Date(2024, 11, 11, 12, 30, 40, 50); // typeof d - object
 // d = Date(); // typeof d - string
 // console.log(typeof d);
 // console.log(d);
 
-// 3. Explain Scope in JavaScript?
+// 3. Explain Scope in JavaScript.
 
 // function ab() {
 //   var a = 8;
@@ -54,7 +54,7 @@
 // let & const - block level scope
 // a variable that is within a function, it also can't be accessed outside of this function
 
-// 4. Explain arrays in JavaScript
+// 4. Explain Arrays in JavaScript.
 
 // var arr = ["Hello World", 42, true];
 
@@ -63,7 +63,7 @@
 // console.log(arr[2]);  // true
 // console.log(arr.length);  // 3
 
-// 5. What is the object type?
+// 5. What is the object type in JavaScript?
 
 // var obj = {
 //   a: "Hello World",
@@ -74,7 +74,7 @@
 // console.log(obj.a); // accessed with doted notation
 // console.log(obj["a"]); // accessed with bracket notation
 
-// another uses of bracket notation in object
+// *** another uses of bracket notation in object ***
 // var obj = {
 //   a: "Hello World",
 //   b: 42,
@@ -82,22 +82,22 @@
 
 // var b = "a";
 
-// console.log(obj[b]);  // Hello World
-// console.log(obj['b']);  // 42
+// console.log(obj[b]); // Hello World
+// console.log(obj["b"]); // 42
+// console.log(obj.b); // 42
 
-// 6. Given a string, reverse each word in the sentence
+// 6. Given a string, Reverse each word in the sentence.
 
 // var string = "Welcome to this JavaScript Guide!";
-
-// var reverseEntireSentence = reverseBySeparator(string, "");
 
 // function reverseBySeparator(string, separator) {
 //   return string.split(separator).reverse().join(separator);
 // }
 
+// var reverseEntireSentence = reverseBySeparator(string, "");
 // console.log(reverseEntireSentence);
 
-// another one
+// *** another one ***
 // var string = string.split("").reverse().join("");
 // console.log(string);
 
