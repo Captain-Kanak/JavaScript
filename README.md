@@ -6,4 +6,4 @@ Author - Captain Kanak
 4. Explain Arrays in JavaScript.
 5. What is the object type in JavaScript?
 6. Given a string, Reverse each word in the sentence.
-7. Explain what a callback function is and provide a simple example
+7. Explain what is callback function?

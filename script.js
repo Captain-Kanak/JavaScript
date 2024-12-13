@@ -34,7 +34,7 @@
 // a = NaN; // typeof a - number (NaN - Not a Number)
 // a = function abc() {}; // typeof a - function
 
-// *** let d = new Date(year, month, day, hour, minute, second, ms) - we can pass arguments like this***
+// *** let d = new Date(year, month, day, hour, minute, second, ms) - we can pass arguments like this ***
 // let d = new Date(2024, 11, 11, 12, 30, 40, 50); // typeof d - object
 // d = Date(); // typeof d - string
 // console.log(typeof d);
@@ -88,25 +88,23 @@
 
 // 6. Given a string, Reverse each word in the sentence.
 
-// var string = "Welcome to this JavaScript Guide!";
+// var string = "Welcome to this JavaScript Guide";
+// var blank = "";
 
-// function reverseBySeparator(string, separator) {
-//   return string.split(separator).reverse().join(separator);
-// }
-
-// var reverseEntireSentence = reverseBySeparator(string, "");
-// console.log(reverseEntireSentence);
-
-// *** another one ***
-// var string = string.split("").reverse().join("");
+// string = string.split(blank).reverse().join(blank);
 // console.log(string);
 
-// 7. Explain what a callback function is and provide a simple example
+// *** spilt string using function ***
+// function reverseBySeparator(string, separator) {
+//   let newString = string.split(separator).reverse().join(separator);
+//   console.log(newString);
+// }
+// reverseBySeparator(string, blank);
+
+// 7. Explain what is callback function?
 
 // function modifyArray(arr, callback) {
-//   // do something to arr here
 //   arr.push(100);
-//   // then execute the callback function that was passed
 //   callback();
 // }
 
@@ -116,60 +114,14 @@
 //   console.log("array has been modified", arr);
 // });
 
-// // Get the current date and time
-// var today = new Date();
-
-// // Get the day of the week (0-6, where 0 is Sunday and 6 is Saturday)
-// var day = today.getDay();
-
-// // Array of day names
-// var daylist = [
-//   "Sunday",
-//   "Monday",
-//   "Tuesday",
-//   "Wednesday",
-//   "Thursday",
-//   "Friday",
-//   "Saturday",
-// ];
-
-// // Display the current day
-// console.log("Today is: " + daylist[day] + ".");
-
-// // Get the current hour, minute, and second
-// var hour = today.getHours();
-// var minute = today.getMinutes();
-// var second = today.getSeconds();
-
-// // Determine if it's AM or PM
-// var prepand = hour >= 12 ? " PM " : " AM ";
-
-// // Convert 24-hour format to 12-hour format
-// hour = hour >= 12 ? hour - 12 : hour;
-
-// // Check for special cases when hour is 0
-// if (hour === 0 && prepand === " PM ") {
-//   if (minute === 0 && second === 0) {
-//     hour = 12;
-//     prepand = " Noon";
-//   } else {
-//     hour = 12;
-//     prepand = " PM";
-//   }
+// *** another example ***
+// function modifyArray(num1, num2, callback) {
+//   let sum = num1 + num2;
+//   callback();
+//   // if (callback) callback(sum);
+//   // return sum;
 // }
 
-// // Check for special cases when hour is 0
-// if (hour === 0 && prepand === " AM ") {
-//   if (minute === 0 && second === 0) {
-//     hour = 12;
-//     prepand = " Midnight";
-//   } else {
-//     hour = 12;
-//     prepand = " AM";
-//   }
-// }
-
-// // Display the current time
-// console.log(
-//   "Current Time: " + hour + prepand + " : " + minute + " : " + second
-// );
+// modifyArray(5, 2, function (res) {
+//   console.log(res);
+// });
