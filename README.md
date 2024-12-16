@@ -7,3 +7,4 @@ Author - Captain Kanak
 5. What is the object type in JavaScript?
 6. Given a string, Reverse each word in the sentence.
 7. Explain what is callback function?
+8. JavaScript Array Reduce Examples.

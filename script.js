@@ -114,14 +114,42 @@
 //   console.log("array has been modified", arr);
 // });
 
-// *** another example ***
-// function modifyArray(num1, num2, callback) {
+// // *** another example ***
+// function mArray(num1, num2, callback) {
 //   let sum = num1 + num2;
-//   callback();
+//   callback(sum);
 //   // if (callback) callback(sum);
 //   // return sum;
 // }
 
-// modifyArray(5, 2, function (res) {
+// mArray(5, 2, function (res) {
 //   console.log(res);
 // });
+
+// // *** another example ***
+// function abc(num1, num2) {
+//   let sum = num1 + num2;
+//   return sum;
+// }
+
+// function display(res) {
+//   console.log(res);
+// }
+
+// let res = abc(10, 20);
+// display(res);
+
+// 8. JavaScript Array Reduce Examples.
+
+// let arr = [1, 2, 3, 4, 5, 6];
+
+// let result = arr.reduce((acc, cur) => {
+//   return acc < cur;
+// }); // we can use default or initial value
+
+// console.log(result);
+
+// *** Good to Know ***
+// that's array reduce function can reduce an array in a single element. that's why it's call reduce function
+// reduce function can take four arguments (preValue, currentValue, currentIndex, array)
+// reduce function can memories previous result
