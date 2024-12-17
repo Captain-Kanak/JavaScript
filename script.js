@@ -153,3 +153,10 @@
 // that's array reduce function can reduce an array in a single element. that's why it's call reduce function
 // reduce function can take four arguments (preValue, currentValue, currentIndex, array)
 // reduce function can memories previous result
+
+// 9. What is First Class Function in JavaScript?
+
+// let firstClassFunction = function () {
+//   return 0;
+// };
+// First-class Functions - when functions in that language are treated like any other variable

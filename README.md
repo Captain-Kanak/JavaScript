@@ -8,3 +8,4 @@ Author - Captain Kanak
 6. Given a string, Reverse each word in the sentence.
 7. Explain what is callback function?
 8. JavaScript Array Reduce Examples.
+9. What is First Class Function in JavaScript?

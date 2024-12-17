@@ -17,3 +17,10 @@
 // abc();
 
 // 3. ***
+// function abc() {
+//   return function () {
+//     console.log("string");
+//   };
+// }
+// abc()();
+// console.log(abc()());
